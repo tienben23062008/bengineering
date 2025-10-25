@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thẻ Thông Tin Training</title>
+    <style>
+        /*
+        *********************************************
+        * PHẦN CSS - Định dạng giao diện
+        *********************************************
+        */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9; /* Màu nền trang web */
+            font-family: sans-serif;
+        }
+
+        .training-card {
+            width: 300px; /* Chiều rộng của thẻ */
+            background-color: white; /* Màu nền chính là màu trắng */
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            color: #333;
+            overflow: hidden;
+        }
+
+        /* Phần Tiêu đề/Hình ảnh */
+        .header-image {
+            background-color: #7d5fff; /* Màu tím đậm cho khu vực ảnh */
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px; /* Chiều cao cố định của khu vực ảnh */
+            position: relative;
+        }
+
+        .header-image img {
+            /* Đây là khu vực giữ chỗ cho hình ảnh chiến thuật */
+            width: 80%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: contain;
+        }
+
+        /* Phần Nội dung chi tiết */
+        .training-details {
+            padding: 20px;
+        }
+
+        .competition-title {
+            color: #777;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        .event-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .event-subtitle {
+            font-size: 16px;
+            font-weight: 500;
+            color: #4a4a4a;
+            margin-bottom: 20px;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: flex-start; /* căn trên */
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .info-row span {
+            margin-left: 10px;
+            line-height: 1.4;
+        }
+
+        .icon {
+            font-size: 16px;
+            color: #7d5fff; /* Màu tím cho Icon */
+            width: 20px;
+            text-align: center;
+            flex-shrink: 0; /* Ngăn icon bị co lại */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="training-card">
+        
+        <div class="header-image">
+            <img src="4341.JPG" alt="Poster Workshop Công nghệ Mạch In PCB">
+        </div>
+
+        <div class="training-details">
+            <div class="competition-title">Football - First Team</div>
+            <div class="event-title">Training</div>
+            <div class="event-subtitle">Open to press only (15 minutes)</div>
+            
+            <div class="info-row">
+                <span class="icon" aria-label="Lịch">&#128197;</span> 
+                <span>Saturday, Oct 25, 11:00 AM h</span>
+            </div>
+
+            <div class="info-row">
+                 <span class="icon" aria-label="Địa điểm">&#128205;</span> 
+                <span>Real Madrid City</span>
+            </div>
+
+            <div class="info-row">
+                 <span class="icon" aria-label="TV">&#128250;</span> 
+                <span>Press conference: yes (live on Realmadrid TV)</span>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
